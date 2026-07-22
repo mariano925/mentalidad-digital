@@ -1,0 +1,63 @@
+body {
+    font-family: $font-main;
+    background: $bg-gradient;
+    background-attachment: fixed;
+    color: $text-light;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+    align-items: start;
+}
+
+// Blobs animados de fondo
+body::before,
+body::after {
+    content: "";
+    position: fixed;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    z-index: -1;
+    filter: blur(100px);
+    opacity: 0.35;
+    animation: floating 12s infinite alternate ease-in-out;
+}
+
+body::before {
+    background: $primary-color;
+    top: 8%;
+    left: 8%;
+}
+
+body::after {
+    background: $accent-color;
+    bottom: 8%;
+    right: 8%;
+    animation-delay: -6s;
+}
+
+@keyframes floating {
+    0% { transform: translate(0, 0); opacity: 0.35; }
+    100% { transform: translate(70px, 130px); opacity: 0.2; }
+}
+
+// Scrollbar Moderno
+::-webkit-scrollbar { width: 10px; }
+::-webkit-scrollbar-track { background: $dark-bg; }
+::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.12);
+    border-radius: 10px;
+    border: 2px solid $dark-bg;
+    &:hover { background: $primary-color; border-color: $primary-color; }
+}

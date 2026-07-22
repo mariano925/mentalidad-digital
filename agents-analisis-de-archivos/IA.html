@@ -1,0 +1,165 @@
+<<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pensar con la IA: Un Socio Creativo</title>
+    <link rel="stylesheet" href="css44/style.css">
+    <!-- Librería de Confetti -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1>🤖 Un Viaje Curioso hacia la Inteligencia Artificial</h1>
+        <p class="subtitle">¿Qué pasa cuando dejamos de ver a la IA como una máquina y empezamos a tratarla como un compañero de ideas? 💡</p>
+    </header>
+
+    <main class="container">
+
+        <!-- Navegación superior -->
+        <nav class="page-nav" style="grid-column: 1 / -1; display: flex; justify-content: space-between; padding: 10px 0; margin-bottom: 10px;">
+            <a href="index.html" class="contact-link">← Volver al Inicio</a>
+            <a href="teoria.html" class="contact-link">← Volver a Teoría</a>
+        </nav>
+
+        <!-- Video principal -->
+        <section class="card reveal-left" style="grid-column: 1 / -1;">
+            <div class="card-title">🎬 Uso de la Inteligencia Artificial</div>
+            <div class="video-item">
+                <video controls>
+                    <source src="audio-video/uso-de-la-ia.mp4" type="video/mp4">
+                    Tu navegador no soporta la reproducción de video.
+                </video>
+                <p class="gallery-description">Video: Cómo utilizar la Inteligencia Artificial como herramienta creativa y colaborativa.</p>
+            </div>
+        </section>
+
+        <!-- Introducción Reflexiva -->
+        <section class="card reveal-left" style="grid-column: 1 / -1;">
+            <div class="card-title">🚀 Más allá de las respuestas rápidas</div>
+            <div class="card-text">
+                <p>A veces nos enfrentamos a desafíos tan grandes que no sabemos por dónde empezar 😅. En lugar de pedirle a la IA una solución mágica de un solo intento, ¿qué tal si conversamos paso a paso? El verdadero encanto aparece cuando dividimos un proyecto en pequeñas tareas interconectadas, manteniendo siempre nuestra mirada crítica y humana para guiarnos mutuamente.</p>
+            </div>
+        </section>
+
+        <!-- Formas de Dialogar -->
+        <section class="card reveal-left">
+            <div class="card-title">🔍 ¿Cómo llega la IA a sus conclusiones?</div>
+            <div class="card-text">
+                <p>Cuando le pedimos a la herramienta que nos explique su razonamiento paso a paso, abrimos una ventana a su lógica interna 🧠. Esto nos ayuda a entender sus decisiones, evaluar si va por buen camino o descubrir cuándo está alucinando 👀.</p>
+            </div>
+        </section>
+
+        <section class="card reveal-left">
+            <div class="card-title">🌳 El arte de explorar caminos infinitos</div>
+            <div class="card-text">
+                <p>Ante un dilema complejo, no hay una sola respuesta correcta ✨. Podemos invitar a la IA a ramificar sus ideas como si fuera un árbol de posibilidades, comparando distintas soluciones en paralelo antes de elegir el mejor rumbo 🗺️.</p>
+            </div>
+        </section>
+
+        <!-- Aprendizaje y Memoria -->
+        <section class="card reveal-left" style="grid-column: 1 / -1;">
+            <div class="card-title">📚 Nuestra biblioteca de preguntas y memoria compartida</div>
+            <div class="card-text">
+                <p>Aprender a comunicarnos con la IA es un proceso constante de ensayo, curiosidad e iteración 🔄. Guardar aquellas preguntas que despertaron las mejores respuestas es como construir un cuaderno de recetas personal 📝. Además, contar con ventanas de contexto más amplias nos permite conversar sobre textos extensos sin perder jamás el hilo ni la coherencia del panorama general 🧵.</p>
+            </div>
+        </section>
+
+        <!-- Agentes y Futuro -->
+        <section class="card reveal-left">
+            <div class="card-title">🤔 ¿Hasta dónde dejamos que actúe por nosotros?</div>
+            <div class="card-text">
+                <p>Hoy existen agentes de IA capaces de analizar, actuar y observar de manera autónoma para cumplir objetivos más amplios 🦾. Sin embargo, la decisión final siempre es nuestra ✋: antes de delegar una tarea, vale la pena preguntarnos qué tan riesgosa es y si podemos deshacerla si algo no sale como esperábamos 😬.</p>
+            </div>
+        </section>
+
+        <section class="card reveal-left">
+            <div class="card-title">🌍 Crear para y con la comunidad</div>
+            <div class="card-text">
+                <p>La tecnología solo cobra sentido cuando transforma realidades 💫. Incorporar miradas diversas e involucrar a las personas en este desarrollo ayuda a mitigar sesgos y a construir herramientas verdaderamente útiles, empáticas e inclusivas 🤝.</p>
+            </div>
+        </section>
+
+        <!-- Quiz Interactivo IA -->
+        <section class="card quiz-section reveal-left" style="grid-column: 1 / -1;">
+            <div class="card-title">🧠 ¿Cuánto sabés de IA? ¡Poné a prueba tu cabeza! 🤖</div>
+            <div class="card-text">
+                <p style="margin-bottom: 20px;">Leíste, miraste el video y reflexionaste. Ahora viene la parte divertida 😏. Cinco preguntas, sin trampa ni cartón. ¿Le entrás?</p>
+
+                <div class="quiz-container">
+
+                    <!-- Pregunta 1 -->
+                    <div class="quiz-question">
+                        <p><strong>1. 🔍 ¿Qué técnica usamos para entender cómo razona la IA paso a paso?</strong></p>
+                        <div class="quiz-options">
+                            <button class="quiz-btn" onclick="check(this, false, '❌ Eso es para películas de ciencia ficción. La IA no tiene base de datos que hackear así nomás.')">Hackear su base de datos interna</button>
+                            <button class="quiz-btn" onclick="check(this, true, '✅ ¡Exacto! Pedirle que explique su razonamiento paso a paso (chain of thought) nos abre una ventana a su lógica interna. ¡Un golazo para detectar alucinaciones!')">Pedirle que explique su razonamiento paso a paso</button>
+                            <button class="quiz-btn" onclick="check(this, false, '❌ Interesante pregunta filosófica, pero no nos dice cómo llegó a su respuesta. Seguí buscando.')">Preguntarle si es consciente de sus errores</button>
+                        </div>
+                        <div class="quiz-feedback"></div>
+                    </div>
+
+                    <!-- Pregunta 2 -->
+                    <div class="quiz-question">
+                        <p><strong>2. 👀 Cuando la IA "alucina", ¿qué está pasando realmente?</strong></p>
+                        <div class="quiz-options">
+                            <button class="quiz-btn" onclick="check(this, false, '❌ Ojalá tuviera modo descanso, pero no. Alucinar es un problema de confianza sin fundamento.')">Está en modo descanso y sueña cosas raras</button>
+                            <button class="quiz-btn" onclick="check(this, false, '❌ No es un tema de batería. El problema es más profundo que eso.')">Le falta energía y calcula mal</button>
+                            <button class="quiz-btn" onclick="check(this, true, '✅ ¡Sí! La IA genera información falsa pero con una confianza total, como si fuera verdad. Por eso siempre hay que mantener la mirada crítica 🧐.')">Genera información falsa con total confianza</button>
+                        </div>
+                        <div class="quiz-feedback"></div>
+                    </div>
+
+                    <!-- Pregunta 3 -->
+                    <div class="quiz-question">
+                        <p><strong>3. 🧵 ¿Qué es la "ventana de contexto" de una IA?</strong></p>
+                        <div class="quiz-options">
+                            <button class="quiz-btn" onclick="check(this, true, '✅ ¡Correcto! Es como la memoria de trabajo de la IA: cuanto más grande, más texto puede procesar sin perder el hilo de la conversación 🧠.')">La cantidad de texto que puede procesar en una conversación</button>
+                            <button class="quiz-btn" onclick="check(this, false, '❌ Modo oscuro es otra cosa, aunque también mola. La ventana de contexto tiene que ver con memoria.')">Un modo oscuro especial para trabajar de noche</button>
+                            <button class="quiz-btn" onclick="check(this, false, '❌ Frío frío. La pantalla es hardware, la ventana de contexto es un concepto de procesamiento de texto.')">La pantalla donde se muestra la respuesta</button>
+                        </div>
+                        <div class="quiz-feedback"></div>
+                    </div>
+
+                    <!-- Pregunta 4 -->
+                    <div class="quiz-question">
+                        <p><strong>4. 🦾 Antes de delegar una tarea a un agente de IA, ¿qué deberías preguntarte?</strong></p>
+                        <div class="quiz-options">
+                            <button class="quiz-btn" onclick="check(this, false, '❌ Jaja, el humor de la IA no es variable. Lo que importa es evaluar el riesgo real de la tarea.')">¿La IA tiene buen humor hoy?</button>
+                            <button class="quiz-btn" onclick="check(this, true, '✅ ¡Exactamente! Evaluar el riesgo y la reversibilidad de la tarea es clave antes de darle autonomía a un agente. La decisión final siempre es tuya ✋.')">¿Qué tan riesgosa es y puedo deshacerla si algo falla?</button>
+                            <button class="quiz-btn" onclick="check(this, false, '❌ Interesante dilema ético, pero no es lo primero que hay que preguntarse antes de delegar.')">¿La IA tiene valores similares a los míos?</button>
+                        </div>
+                        <div class="quiz-feedback"></div>
+                    </div>
+
+                    <!-- Pregunta 5 -->
+                    <div class="quiz-question">
+                        <p><strong>5. 🌍 ¿Por qué es importante incluir miradas diversas en el desarrollo de IA?</strong></p>
+                        <div class="quiz-options">
+                            <button class="quiz-btn" onclick="check(this, false, '❌ El equipo puede ser fotogénico Y diverso, pero la razón de fondo es mucho más importante que eso.')">Para que el equipo quede bien en las fotos de LinkedIn</button>
+                            <button class="quiz-btn" onclick="check(this, false, '❌ La IA no aprende mejor por colores, pero sí aprende mejor con datos más variados y representativos 😄.')">Porque la IA aprende mejor con muchos colores de pantalla</button>
+                            <button class="quiz-btn" onclick="check(this, true, '🎉 ¡Perfecto! Incorporar miradas diversas ayuda a mitigar sesgos y construir herramientas más empáticas, útiles e inclusivas para todos. ¡Eso es tecnología con propósito! 🤝')">Para mitigar sesgos y construir herramientas más inclusivas</button>
+                        </div>
+                        <div class="quiz-feedback"></div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Navegación inferior -->
+        <nav class="page-nav" style="grid-column: 1 / -1; display: flex; justify-content: space-between; padding: 10px 0; margin-top: 10px;">
+            <a href="index.html" class="contact-link">← Volver al Inicio</a>
+            <a href="teoria.html" class="contact-link">← Volver a Teoría</a>
+        </nav>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - Una exploración reflexiva sobre el pensamiento compartido entre personas e IA</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+// 1. FUENTES
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
+$font-main: 'Inter', sans-serif;
+
+// 2. COLORES NEÓN Y NEUTROS
+$primary-color: #00d9ff; // Azul cian
+$accent-color: #ff006e;  // Rosa
+$dark-bg: #0a0014;
+$dark-secondary: #1a0033;
+$text-light: #f0f9ff;
+$text-muted: #a0d0ff;
+
+// 3. EFECTOS GLASS
+$glass-bg: rgba(0, 217, 255, 0.04);
+$glass-border: rgba(0, 217, 255, 0.2);
+
+// 4. GRADIENTES ELÉCTRICOS
+$bg-gradient: linear-gradient(135deg, #0a0014 0%, #1a0033 50%, #2d0a47 100%);
+$gradient-text: linear-gradient(to right, #00d9ff, #ff006e);
+
+// 5. SOMBRAS CYBERPUNK
+$shadow-sm: 0 4px 12px rgba(0, 217, 255, 0.15);
+$shadow-md: 0 8px 24px rgba(0, 217, 255, 0.25);
+$shadow-lg: 0 12px 32px rgba(0, 217, 255, 0.35);
+
+// 6. TRANSICIONES GLOBALES
+$transition-base: all 0.35s cubic-bezier(0.23, 1, 0.320, 1);
+$transition-fast: 0.25s ease;

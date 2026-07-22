@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Lado B - Design Thinking</title>
+    <!-- Usamos el mismo CSS para mantener la facha -->
+    <link rel="stylesheet" href="css44/style.css">
+    <!-- Librería de Confetti -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <!-- Vinculamos la misma lógica para que los efectos funcionen aquí también -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <h1>🎵 El Lado B de la Teoría</h1>
+        <p>🫧 Porque los videos son solo la punta del iceberg</p>
+    </header>
+
+    <main class="container">
+
+        <!-- Navegación superior -->
+        <nav class="page-nav" style="grid-column: 1 / -1; display: flex; justify-content: space-between; padding: 10px 0;">
+            <a href="index.html" class="contact-link">← Volver al Inicio</a>
+            <a href="IA.html" class="contact-link">Ir a IA →</a>
+        </nav>
+        
+        <section class="card" style="grid-column: 1 / -1;">
+            <div class="card-title">🤔 ¿Por qué profundizar?</div>
+            <div class="card-text">
+                <p>Si llegaste hasta acá es porque te picó el bichito de la curiosidad 🐛. Ya vimos que el Design Thinking no es solo para diseñadores con anteojos raros 👓, es una forma de encarar la vida y los negocios. Acá te tiro un par de conceptos que en el primer pantallazo no entran, pero que son clave para que no te vendan gato por liebre 🐈.</p>
+            </div>
+        </section>
+
+        <section class="card">
+            <div class="card-title">🔁 El Bucle de IBM: No es una línea recta</div>
+            <div class="card-text">
+                <p>Mucha gente piensa que resolver problemas es ir de A a B. Error ❌. En el mundo real, es un rulo constante. <b>Observar 👀</b> (mirar qué hace la gente, no solo lo que dicen), <b>Reflexionar 🧠</b> (sentarse a pensar qué carajo significa eso) y <b>Hacer 🛠️</b> (armar algo rápido para ver si funciona).</p>
+                <p>Si te quedás mucho tiempo pensando, no hacés nada 😴. Si hacés sin pensar, hacés cualquier cosa 😱. El truco está en mantener el ritmo del bucle 🎯.</p>
+            </div>
+        </section>
+
+        <section class="card">
+            <div class="card-title">🌈 La Diversidad no es para la foto</div>
+            <div class="card-text">
+                <p>IBM dice que los equipos tienen que ser diversos 👥. Y no es por quedar bien en LinkedIn 😄. Si ponés a cinco programadores iguales a resolver un drama, te van a dar cinco soluciones iguales 🤦. Necesitás a alguien que sepa de ventas 💰, a alguien que hable con el cliente 🤝, y hasta a alguien que no entienda nada de tecnología para que haga las preguntas "tontas" que nadie se anima a hacer 🙋.</p>
+            </div>
+        </section>
+
+        <section class="card">
+            <div class="card-title">🌱 Tu Carrera: Mentalidad de Crecimiento</div>
+            <div class="card-text">
+                <p>En el video de Mentalidad Digital hablamos de Nike y Kodak 📷. La diferencia fue la humildad 🙇. Una empresa (y una persona) con mentalidad de crecimiento sabe que no lo sabe todo 📚. Aprender es un hábito, como ir al gimnasio 🏋️. Si no lo hacés, te oxidás 🪣.</p>
+                <p><i>💬 Pregunta para el camino: ¿Qué es eso que hoy no sabés hacer pero que te daría una ventaja bárbara el mes que viene?</i></p>
+            </div>
+        </section>
+
+        <!-- Navegación inferior -->
+        <nav class="page-nav" style="grid-column: 1 / -1; display: flex; justify-content: space-between; padding: 10px 0;">
+            <a href="index.html" class="contact-link">← Volver al Inicio</a>
+            <a href="IA.html" class="contact-link">Ir a IA →</a>
+        </nav>
+
+    </main>
+
+    <!-- Botón Volver Arriba -->
+    <button id="back-to-top" title="Volver arriba">↑</button>
+
+    <!-- Mantenemos los links de contacto por si alguien se copa -->
+    <div class="top-contact-links">
+        <a class="top-contact-link contact-link" href="mailto:moremanu570@gmail.com">moremanu570@gmail.com</a>
+        <a class="top-whatsapp-button whatsapp-button" href="https://wa.me/541100000000" target="_blank" rel="noopener">WhatsApp</a>
+    </div>
+
+    <footer>
+        <div class="footer-contact">
+            <p class="footer-copy">&copy; 2026 - Mariano M. Moreyra</p>
+        </div>
+    </footer>
+
+</body>
+</html>

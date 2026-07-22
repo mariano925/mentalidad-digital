@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::selection {
+    background: $accent-color;
+    color: white;
+}
+
+:focus-visible {
+    outline: 2px solid $primary-color;
+    outline-offset: 6px;
+}

@@ -1,0 +1,62 @@
+@media (max-width: 768px) {
+    .container { grid-template-columns: 1fr; max-width: 100%; }
+    .gallery-container img { width: 60%; }
+    .multimedia-grid { flex-direction: column; }
+}
+
+@media (max-width: 600px) {
+    html, body { overflow-x: hidden; }
+
+    .container {
+        padding: 12px 12px 110px;
+    }
+
+    header {
+        min-height: auto;
+        height: auto;
+        padding: 18px 12px 10px;
+    }
+
+    header h1 { font-size: clamp(1.6rem, 7vw, 1.9rem); }
+
+    .top-contact-links {
+        left: 10px;
+        right: 10px;
+        bottom: 8px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: stretch;
+        width: calc(100vw - 20px);
+        max-width: none;
+        gap: 8px;
+    }
+
+    .top-contact-links .contact-link,
+    .top-contact-links .whatsapp-button {
+        flex: 1 1 0;
+        min-width: 0;
+        max-width: none;
+        font-size: 0.78rem;
+        padding: 10px 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    header { height: auto; }
+    header h1 { font-size: 1.45rem; }
+    .gallery-container img { width: 100%; max-width: 360px; }
+    .audio-item,
+    .video-item {
+        min-width: 0;
+        max-width: none;
+        flex-basis: 100%;
+    }
+}
+
+@media (max-width: 360px) {
+    .container { padding: 10px 10px 120px; }
+    .card-title { padding: 14px; }
+    .card-text { padding: 14px; }
+    .top-contact-links { gap: 6px; }
+}
